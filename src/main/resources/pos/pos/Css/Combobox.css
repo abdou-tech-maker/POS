@@ -1,0 +1,24 @@
+@font-face {
+    src: url("../Fonts/OpenSans_Condensed-SemiBoldItalic.ttf");
+}
+.combo-box
+{
+    -fx-border-width: 0.5;
+    -fx-background-color: white;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50 ;
+    -fx-font-size: 14;
+    -fx-font-weight: 400;
+    -fx-font-family: 'Open Sans'/*, sans-serif*/;
+    -fx-padding:0 ;
+  /* -fx-font-style: SemiBoldItalic;*/
+
+}
+
+.combo-box :hover{
+    -fx-background-color: #FF0E4B;
+
+}
+.combo-box-base:hover{
+    -fx-border-color: #FF0E4B;
+}

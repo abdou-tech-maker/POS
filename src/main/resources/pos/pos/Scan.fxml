@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<BorderPane prefHeight="768.0" prefWidth="1131.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.pos.Scan_Controller">
+   <right>
+      <Pane prefHeight="734.0" prefWidth="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="comb" layoutX="-122.0" layoutY="14.0" onAction="#SetContent" prefHeight="30.0" prefWidth="152.0" promptText="Mode" stylesheets="@Css/Combobox.css" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <Pane prefHeight="768.0" prefWidth="18.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" layoutY="14.0" stylesheets="@Css/Scan.css" text="Create Order" />
+         </children>
+      </Pane>
+   </left>
+   <bottom>
+      <BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1125.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

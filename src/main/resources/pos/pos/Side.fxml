@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="744.0" prefWidth="250.0" style="-fx-background-color: #2A3447;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.pos.Side_Controller">
+   <children>
+      <Pane prefHeight="104.0" prefWidth="250.0">
+         <children>
+            <Label layoutX="14.0" layoutY="39.0" stylesheets="@Css/Scan.css" text="Total:" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="135.0" text="INFO D'UTILISATEUR" textFill="WHITE" />
+      <TextField cache="true" layoutX="14.0" layoutY="167.0" prefHeight="45.0" prefWidth="212.0" promptText="Numéro" style="-fx-background-color: #172635;" styleClass="text-field" stylesheets="@Css/Style.css" />
+      <Pane layoutX="15.0" layoutY="237.0" prefHeight="45.0" prefWidth="212.0" style="-fx-background-color: #172635;">
+         <children>
+            <JFXCheckBox fx:id="checkbox" checkedColor="#ff0e4b" layoutX="7.0" layoutY="14.0" onAction="#Enablize" text="Delivery To Door" textFill="WHITE" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="171.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/delivery.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="125.0" layoutY="674.0" prefHeight="45.0" prefWidth="98.0" ripplerFill="WHITE" style="-fx-background-color: FF0E4B;" text="Done" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="15.0" layoutY="674.0" prefHeight="45.0" prefWidth="98.0" ripplerFill="#ff0e4b" style="-fx-background-color: WHITE;" text="Cancel" textFill="#2a3447">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Adr_btn" disable="true" layoutX="15.0" layoutY="282.0" prefHeight="45.0" prefWidth="212.0" style="-fx-background-color: white;" text="Add New Address" textFill="#ff0e4b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

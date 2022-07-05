@@ -1,0 +1,28 @@
+
+@font-face {
+    src: url("../Fonts/OpenSans_Condensed-SemiBoldItalic.ttf");
+}
+@font-face {
+    src: url("../Fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+    src: url("../Fonts/OpenSans_SemiCondensed-ExtraBoldItalic.ttf");
+}
+
+.label {
+
+    -fx-font-size: 32;
+}
+
+.label2 {
+    -fx-font-size: 24;
+
+}
+.text
+{
+    -fx-font-family: 'Open Sans', sans-serif;;
+    -fx-font-size: 32;
+   // -fx-font-style: SemiBoldItalic;
+
+}
+

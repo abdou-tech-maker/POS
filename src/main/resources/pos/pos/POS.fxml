@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderpane" prefHeight="761.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.pos.Main_Controller">
+   <left>
+      <Pane prefHeight="741.0" prefWidth="83.0" style="-fx-background-color: #2A3447;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/POS.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="-5.0" layoutY="86.0" prefHeight="672.0" prefWidth="83.0">
+               <children>
+                  <JFXButton fx:id="btnScan" contentDisplay="CENTER" onAction="#setBtnScan" onMouseEntered="#Change" onMouseExited="#Reset" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#2a3447">
+                     <graphic>
+                        <ImageView fx:id="Scan" fitHeight="35.0" fitWidth="35.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Barcode.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <Bloom threshold="0.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="BtnCatalogue" contentDisplay="CENTER" onAction="#SetBtnCatalogue" onMouseEntered="#Change1" onMouseExited="#Reset1" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#2a3447">
+                     <graphic>
+                        <ImageView fx:id="Basket" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Basket.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <BoxBlur />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" onMouseEntered="#Change2" onMouseExited="#Reset2" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#fffdfd">
+                     <graphic>
+                        <ImageView fx:id="Report" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Report.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" onMouseEntered="#Change3" onMouseExited="#Reset3" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#fffdfd">
+                     <graphic>
+                        <ImageView fx:id="User" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/User.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <ColorInput />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" onMouseEntered="#Change4" onMouseExited="#Reset4" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#fffdfd">
+                     <graphic>
+                        <ImageView fx:id="Statistics" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Statistics.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Pane prefHeight="101.0" prefWidth="83.0" style="-fx-background-color: #2A3447;" />
+                  <JFXButton contentDisplay="CENTER" onMouseEntered="#Change5" onMouseExited="#Reset5" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#fffdfd">
+                     <graphic>
+                        <ImageView fx:id="notify" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Notify.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" onMouseEntered="#Change6" onMouseExited="#Reset6" prefHeight="83.0" prefWidth="83.0" stylesheets="@Css/Style.css" textAlignment="CENTER" textFill="#fffdfd">
+                     <graphic>
+                        <ImageView fx:id="settings" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Settings.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

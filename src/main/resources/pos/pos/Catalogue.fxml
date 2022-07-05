@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1131.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="62.0" prefWidth="42.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="13.0" layoutY="14.0" stylesheets="@Css/Scan.css" text="Catalogue" textFill="#2a3447" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="62.0" prefWidth="94.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="-84.0" layoutY="14.0" prefHeight="38.0" prefWidth="178.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="-2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/icons8_search_100px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="42.0" layoutY="-1.0" prefHeight="41.0" prefWidth="126.0" style="-fx-background-color: #FF0E4B;" text="Ajouter Produit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <BorderPane prefHeight="671.0" prefWidth="1119.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

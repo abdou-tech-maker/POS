@@ -1,0 +1,18 @@
+
+.button:hover
+{
+    -fx-background-color: white;
+
+}
+.text-field:hover{
+    -fx-text-fill: White;
+
+}
+.text-field{
+
+
+}
+.label{
+    -fx-font-weight: 100;
+    -fx-font-family: 'Open Sans';
+}
