@@ -2,6 +2,11 @@
 
 A Smart Point Of Sale Desktop App Designed With JavaFx 
 
+
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=abdou-tech-maker&label=%20views&color=0e75b6&style=flat" alt="https://github.com/abdou-tech-maker/POS" /> </p>
+
+
 ## Badges
 
 
